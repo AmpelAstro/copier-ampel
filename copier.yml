@@ -1,0 +1,18 @@
+plugin_name:
+    type: str
+    help: What is your Ampel plugin called?
+
+plugin_org:
+    type: str
+    help: What is the organization or user name for your Ampel plugin?
+    default: AmpelAstro
+
+plugin_version:
+    type: str
+    help: What is the initial version of your Ampel plugin?
+    default: 0.10.0a0
+
+version_cap:
+    type: str
+    help: What is the maximum version of Ampel your plugin supports?
+    default: "<0.11"
