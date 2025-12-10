@@ -16,3 +16,11 @@ version_cap:
     type: str
     help: What is the maximum version of Ampel your plugin supports?
     default: "<0.11"
+
+author_name:
+    type: str
+    help: What is the author's full name?
+
+author_email:
+    type: str
+    help: What is the author's email address?
