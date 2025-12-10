@@ -1,12 +1,13 @@
 [project]
 name = "ampel-{{plugin_name | lower}}"
-
-[tool.poetry]
 version = "{{plugin_version}}"
 description = "{{plugin_description}}"
+requires-python = ">=3.11, <4"
 authors = [
+    { name = "{{ _author_name }}", email = "{{ _author_email }}" },
 ]
 maintainers = [
+    { name = "{{ _author_name }}", email = "{{ _author_email }}" },
 ]
 license = "BSD-3-Clause"
 readme = "README.md"
@@ -21,6 +22,17 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Astronomy",
     "Typing :: Typed",
 ]
+dependencies = [
+    "ampel-interface (>=0.10.4.post2,{{ _version_cap }})",
+]
+
+[dependency-groups]
+dev = [
+    "pytest-ampel-core (>=0.10.0a3,{{ _version_cap }})",
+    "mypy (>=1.13,<2.0)",
+]
+
+[tool.poetry]
 packages = [
     {include = "ampel"}
 ]
@@ -35,11 +47,6 @@ include = [
     'conf/*/*.yml',
     'conf/*/*/*.yml',
 ]
-
-
-[tool.poetry.dependencies]
-python = "^3.11"
-ampel-interface = {version = ">=0.10.4.post2,<0.11"}
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "setuptools >= 40.6.0", "wheel"]
