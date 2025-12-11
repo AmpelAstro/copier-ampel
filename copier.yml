@@ -1,6 +1,12 @@
 plugin_name:
     type: str
     help: What is your Ampel plugin called?
+    default: SomeNewObservatory
+
+plugin_description:
+    type: str
+    help: A short description of your Ampel plugin.
+    default: Some New Observatory support for the Ampel system.
 
 plugin_org:
     type: str
