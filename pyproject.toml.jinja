@@ -34,18 +34,8 @@ dev = [
 
 [tool.poetry]
 packages = [
-    {include = "ampel"}
-]
-exclude = [
-    "ampel/py.typed",
-]
-include = [
-    'conf/*/*.json',
-    'conf/*/*/*.json',
-    'conf/*/*.yaml',
-    'conf/*/*/*.yaml',
-    'conf/*/*.yml',
-    'conf/*/*/*.yml',
+    {include = "ampel"},
+    {include = "conf/**/*.yml"}
 ]
 
 [project.urls]
