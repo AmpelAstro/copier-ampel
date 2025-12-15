@@ -35,8 +35,8 @@ dev = [
 [tool.poetry]
 packages = [
     {include = "ampel"},
-    {include = "ampel/conf/**/*.yml"},
 ]
+exclude = ["ampel/py.typed"]
 
 [project.urls]
 homepage = "https://ampelproject.github.io"
