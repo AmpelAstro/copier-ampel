@@ -30,3 +30,9 @@ author_name:
 author_email:
     type: str
     help: What is the author's email address?
+
+_exclude:
+    - copier.yml
+    - README.md
+    - LICENSE
+    - .git
