@@ -6,7 +6,7 @@ plugin_name:
 plugin_description:
     type: str
     help: A short description of your Ampel plugin.
-    default: "{% plugin_name %} support for the Ampel system."
+    default: "{{ plugin_name }} support for the Ampel system."
 
 plugin_org:
     type: str
