@@ -33,6 +33,5 @@ user_email:
 
 _exclude:
     - copier.yml
-    - README.md
     - LICENSE
     - .git
