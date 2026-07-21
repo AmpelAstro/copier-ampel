@@ -6,7 +6,7 @@ plugin_name:
 plugin_description:
     type: str
     help: A short description of your Ampel plugin.
-    default: Some New Observatory support for the Ampel system.
+    default: "{{ plugin_name }} support for the Ampel system."
 
 plugin_org:
     type: str
@@ -23,11 +23,11 @@ version_cap:
     help: What is the maximum version of Ampel your plugin supports?
     default: "<0.11"
 
-author_name:
+user_name:
     type: str
     help: What is the author's full name?
 
-author_email:
+user_email:
     type: str
     help: What is the author's email address?
 
