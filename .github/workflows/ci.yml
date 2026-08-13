@@ -42,7 +42,11 @@ jobs:
 
     - name: Render template with dummy values
       run: |
-        copier copy .template . --trust -d project_name=dummy-project -d user_name=dummy-author -d user_email=nobody@nonesuch.co -d description="dummy description" --defaults
+        copier copy .template . --trust -d plugin_name=demo -d user_name=dummy-author -d user_email=nobody@nonesuch.co --defaults
+
+    - name: add dummy content
+      run: |
+        echo "from ampel.core.AmpelContext import AmpelContext" > ampel/demo/util.py
 
     - name: Lock dependencies
       run: |
