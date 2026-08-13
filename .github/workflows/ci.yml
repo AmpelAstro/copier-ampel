@@ -1,11 +1,11 @@
-name: CI
+name: ci
 
 on:
   push:
   pull_request:
 
 jobs:
-  render-template:
+  test-template:
     runs-on: ubuntu-latest
     env:
       POETRY_VERSION: 2.4.1
@@ -71,4 +71,8 @@ jobs:
     - name: mypy
       run: |
         poetry run mypy
+    
+    - name: build config
+      run: |
+        poetry run ampel config build --no-provenance --stop-on-errors=2 -out ampel_config.yml
 
