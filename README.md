@@ -10,7 +10,7 @@ A [copier](https://copier.readthedocs.io) template that covers the boring bits o
 ## Quickstart
 
 1. [Install copier](https://copier.readthedocs.io/en/stable/#installation)
-2. Generate a new project skeleton: `copier copy gh:AmpelAstro/copier-ampel /path/to/new/project`
+2. Generate a new project skeleton: `copier copy https://github.com/AmpelAstro/copier-ampel.git /path/to/new/project`
 3. Add code, tests, push to a new repo
 
 ## Updating the template
