@@ -38,7 +38,7 @@ jobs:
 
     - name: Install Copier
       run: |
-        pip install copier=${{ env.COPIER_VERSION }}
+        pip install copier==${{ env.COPIER_VERSION }}
 
     - name: Render template with dummy values
       run: |
