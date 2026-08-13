@@ -10,6 +10,7 @@ jobs:
     env:
       POETRY_VERSION: 2.4.1
       COPIER_VERSION: 9.17.1
+      PYTHON_VERSION: 3.11
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -20,7 +21,7 @@ jobs:
       id: setup-python
       uses: actions/setup-python@v5
       with:
-        python-version: "3.11"
+        python-version: ${{ env.PYTHON_VERSION }}
 
     - name: Load cached Poetry Binary
       id: cached-poetry-binary
