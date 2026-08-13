@@ -33,5 +33,6 @@ user_email:
 
 _exclude:
     - copier.yml
+    - .github/workflows/ci.yml
     - LICENSE
     - .git
