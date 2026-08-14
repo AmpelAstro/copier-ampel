@@ -8,8 +8,11 @@ jobs:
   test-template:
     runs-on: ubuntu-latest
     env:
+      # renovate: datasource=pypi depName=poetry versioning=pep440
       POETRY_VERSION: 2.4.1
+      # renovate: datasource=pypi depName=copier versioning=pep440
       COPIER_VERSION: 9.17.1
+      # renovate: datasource=python-version depName=python
       PYTHON_VERSION: 3.11
     steps:
     - name: Checkout
